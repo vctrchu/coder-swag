@@ -24,22 +24,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DDD-Zo-W2K">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DDD-Zo-W2K">
                                 <rect key="frame" x="0.0" y="65" width="375" height="538"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="174" id="THm-yu-woB" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="174"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" rowHeight="125" id="THm-yu-woB" customClass="CategoryCell" customModule="coder_swag" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="125"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="THm-yu-woB" id="tKq-Ej-mZ5">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="173.5"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="THm-yu-woB" id="tKq-Ej-mZ5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="digital" translatesAutoresizingMaskIntoConstraints="NO" id="23j-of-tCT">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="173.5"/>
+                                                    <rect key="frame" x="0.0" y="3" width="375" height="125"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="125" id="jD8-yL-OUb"/>
+                                                        <constraint firstAttribute="width" constant="375" id="rMl-27-1xR"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-Wt-DNB">
-                                                    <rect key="frame" x="140.5" y="75.5" width="94" height="23"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="HOODIES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSJ-Wt-DNB">
+                                                    <rect key="frame" x="140.5" y="51" width="94" height="23"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="23" id="PAk-9J-14q"/>
                                                         <constraint firstAttribute="width" constant="94" id="sOd-uA-G4p"/>
@@ -51,15 +55,15 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="WSJ-Wt-DNB" firstAttribute="centerY" secondItem="tKq-Ej-mZ5" secondAttribute="centerY" id="1O3-w5-D8x"/>
-                                                <constraint firstAttribute="bottom" secondItem="23j-of-tCT" secondAttribute="bottom" id="2e5-Wo-Xwj"/>
-                                                <constraint firstAttribute="trailing" secondItem="23j-of-tCT" secondAttribute="trailing" id="7sM-4U-C4G"/>
+                                                <constraint firstItem="23j-of-tCT" firstAttribute="top" secondItem="tKq-Ej-mZ5" secondAttribute="top" constant="3" id="64f-g4-AJh"/>
                                                 <constraint firstItem="WSJ-Wt-DNB" firstAttribute="centerX" secondItem="tKq-Ej-mZ5" secondAttribute="centerX" id="O8i-0U-HfA"/>
-                                                <constraint firstItem="23j-of-tCT" firstAttribute="leading" secondItem="tKq-Ej-mZ5" secondAttribute="leading" id="hIV-5f-evZ"/>
-                                                <constraint firstItem="23j-of-tCT" firstAttribute="top" secondItem="tKq-Ej-mZ5" secondAttribute="top" id="pxO-W2-U8R"/>
+                                                <constraint firstItem="23j-of-tCT" firstAttribute="leading" secondItem="tKq-Ej-mZ5" secondAttribute="leading" id="QKc-07-U4e"/>
+                                                <constraint firstAttribute="trailing" secondItem="23j-of-tCT" secondAttribute="trailing" id="qT8-1C-AyN"/>
+                                                <constraint firstAttribute="bottom" secondItem="23j-of-tCT" secondAttribute="bottom" constant="3" id="vbL-BJ-mm1"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="categoriyImage" destination="23j-of-tCT" id="HCh-aA-SFu"/>
+                                            <outlet property="categoryImage" destination="23j-of-tCT" id="Gih-OB-V0v"/>
                                             <outlet property="categoryTitle" destination="WSJ-Wt-DNB" id="xiF-d7-IVK"/>
                                         </connections>
                                     </tableViewCell>
