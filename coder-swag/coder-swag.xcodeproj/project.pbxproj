@@ -46,7 +46,6 @@
 		FB421F6322E416150069411B = {
 			isa = PBXGroup;
 			children = (
-				FBF8CB6D22E5401100846610 /* ProductCell.swift */,
 				FB421F6E22E416150069411B /* coder-swag */,
 				FB421F6D22E416150069411B /* Products */,
 			);
@@ -88,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FB421F8422E41A6D0069411B /* CategoryCell.swift */,
+				FBF8CB6D22E5401100846610 /* ProductCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
